@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html   lang ="fr" ng-app="routeApp">
+    <head>
+        <title>Partners supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <script src = "/script/js/angular-cookies.js"></script>
+        <script src= "/script/js/angular-route.js"></script> 
+        <script src= "/script/js/mainApp.js"></script>
+        <script src= "/script/js/script.js"></script>
+        <link rel="stylesheet" href="views/style.css" type="text/css"/>
+        <script type="text/javascript"></script>
+
+   </head>
+    <body>
+        
+
+        <div class="for"> <h2>Partners List</h2> </div>
+
+          <div class="for">
+            <a href="#/validate"><button class="pure-button success"> Validate Todo</button> </a>
+            <a href="#/delete"><button class="pure-button error">Delete Todo</button> </a>
+            <a href="#/search"><button class="pure-button warning">Search Todo</button></a>
+            <a href="#/sort"><button class="pure-button warning">Sort Todo</button></a>
+            <a href="#/list"><button class="pure-button warning"> Todo list</button></a>
+            <a href="#/add"><button class="pure-button secondary">Add Partners</button></a>
+            <a href="#/afaire"><button class="pure-button secondary">Add Users</button></a>
+           
+           
+
+
+        </div>
+
+         <div ng-view> 
+        </div> 
+        
+        
+
+        <div> 
+            <footer>
+
+                <p>@AusyDeMerde !</p>
+                <p>le 28 Septembre à 23h12</p>
+
+            </footer>
+        </div>
+    </body>
+</html>

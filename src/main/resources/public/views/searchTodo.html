@@ -1,0 +1,47 @@
+       <div ng-app = "routeAppControllers" ng-controller = "contactad" class="for">
+
+            <form class="pure-form pure-form-aligned"  ng-submit="submitFormular1()" > 
+
+                <fieldset>
+                    <div class="pure-control-group">
+                        <label for="number">Number</label>
+                        <input id="number"   required  type="text" placeholder="Number" ng-model="plop.number">
+                    </div>
+
+
+                    <div class="pure-controls">
+                        <label for="cb" class="pure-checkbox">
+                            <input id="cb" type="checkbox"> I've read the terms and conditions
+                        </label>
+
+                        <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="for" > 
+
+                <table>
+                    <tr>
+                        <th>Number</th>
+                        <th>Title</th>
+                        <th>Deadline Date</th>
+                        <th>Description</th>
+                        <th>Start Date</th>
+                        <th>State</th>
+
+                    </tr>
+
+                    <tr  >
+                        <td>{{ plo.number}}</td>
+                        <td>{{ plo.title}}</td>
+                        <td>{{plo.dateDeadline}}</td>
+                        <td>{{plo.description}}</td>
+                        <td>{{plo.startDate}}</td>
+                        <td>{{plo.state}} </td>
+                    </tr>
+                </table>
+
+
+            </div>
+
+        </div>     

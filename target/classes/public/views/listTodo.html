@@ -1,0 +1,31 @@
+           
+<div ng-app = " routeAppControllers" ng-controller = "contactad2" id="formulaire">
+
+    <div class="for" >
+        <h1>   {{ message}} </h1>
+        <table>        
+
+            <tr>
+                <th>Number</th>
+                <th>Title</th>
+                <th>Deadline Date</th>
+                <th>Description</th>
+                <th>Start Date</th>
+                <th>State </th>
+
+            </tr>
+
+            <tr ng-repeat = "plop in plopes">
+                <td> <input data-ng-model="plop.number" type ="text" ></td>
+                <td> <input data-ng-model=" plop.title" type ="text"></td>
+                <td> <input data-ng-model="plop.dateDeadline" type="text"> </td>
+                <td> <input data-ng-model ="plop.description" type = "text"> </td>
+                <td> <input data-ng-model="plop.startDate" type ="text"> </td>
+                <td id= "friend_{{$index}}"> <input data-ng-model ="plop.state" type ="text"> </td>
+            </tr>
+        </table>
+
+
+    </div>
+    <a href="http://localhost:8080/#/add"><button class="pure-button success"> Return Add Todo</button> </a>
+</div>
